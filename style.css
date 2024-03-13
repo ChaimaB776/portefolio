@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #1b5ea2; 
+    color: #fff; 
+    padding: 15px 20px; /* Espacement ds le header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ajoutez une ombre si vous le souhaitez */
+    z-index: 1000; /* Assurez-vous que la barre de navigation est au-dessus de tout le reste */
+    transition: top 0.3s;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Ajustez la marge intérieure pour que le contenu ne soit pas collé aux bords */
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.titre {
+    padding: 0 10px; /* Ajouter de l'espace autour de chaque élément */
+}
+
+.logo {
+    margin-right: auto; /* Déplace le logo à l'extrême droite */
+}
+
+.titre.cv {
+    margin-left: auto; /* Déplace "Mon CV" à l'extrême gauche */
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+li {
+    margin: 0 10px;
+}
+
+/* Pour mon logo, à définir */
+li img {
+    max-height: 40px; /* Taille max*/
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Les éléments seront empilés les uns après les autres */
+    justify-content: space-between; /* Espace entre les éléments */
+    margin: 20px; /* Marge autour du conteneur principal */
+}
+#text-container {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  #typed-text {
+    font-size: 24px;
+    font-family: monospace;
+    border-right: 2px solid #000;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(30, end);
+  }
+
+footer {
+    display: flex;
+    bottom: 0;
+    padding: 10px 20px;
+    background: #1b5ea2;
+    color: whitesmoke;
+}
+
+
