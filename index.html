@@ -4,32 +4,120 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>CV</title>
+    <title>Portfolio Chaïma BEN MAHFOUDH</title>
 </head>
 <body>
     <header>
         <nav id="navbar">
             <ul>
                 <li><img src="img/logo-ipssi.png" alt="Logo de la bibliothèque"></li>
-                <li class="titre.cv"><h3>Mon Portefolio</h3></li>
-                <li class="titre"><h3>Acceuil</h3></li>
-                <li class="titre"><h3>BTS SIO</h3></li>
-                <li class="titre"><h3>Ma présentation</h3</li>
-                <li class="titre"><h3>Mes projets</h3></li>
-                <li class="titre"><h3>Mes formations</h3></li>
+                <li class="titre cv"><h3>Mon Portfolio</h3></li>
+                <li class="titre"><a href="index.html">Accueil</a></li>
+                <li class="titre"><a href="bts.html">BTS SIO</a></li>
+                <li class="titre">
+                    <a href="veille.html">Veille Technologique</a>
+                    <ul class="submenu">
+                        <li><a href="veille1.html">Veille 1</a></li>
+                        <li><a href="veille2.html">Veille 2</a></li>
+                    </ul>
+                </li>
+                <li class="titre">
+                    <a href="projet.html">Mes Projets</a>
+                    <ul class="submenu">
+                        <li><a href="projet1.html">Première Année</a></li>
+                        <li><a href="projet2.html">Deuxième Année</a></li>
+                        <li><a href="projet3.html">Projets Personnels</a></li>
+                    </ul>
+                </li>
+                <li class="titre">
+                    <a href="ep.html">Mes Expériences</a>
+                    <ul class="submenu">
+                        <li><a href="stage.html">Stage</a></li>
+                        <li><a href="experience2.html">Alternance</a></li>
+                        <li><a href="experience3.html">Formation Linkedin Learning</a></li>
+                    </ul>
+                </li>
+                <li class="titre"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div id="text-container">
-            <p id="typed-text"></p>
-            <h2>Bienvenue sur mon portefolio!</h2>
+        <section id="acceuil">
+            <div id="text-container">
+                <p id="typed-text"></p>
+                <h2>Bienvenue sur mon portfolio!</h2>
             </div>
+        </section>
+    
+        <section id="about-me">
+                <div class="bubble">
+                    <img src="img/icon.png" alt="Mon icône" class="icon">
+                </div>
+            <div class="description">
+                <h3>À propos de moi</h3>
+                <p>Je m'appelle Chaïma BEN MAHFOUDH, et je suis une étudiante en BTS SIO passionnée par l'informatique et ses nouveautés. Actuellement en première année de BTS, je recherche un contrat d'apprentissage pour ma seconde année.</p>
+            </div>
+        </section>
+        
+
+        <section id="content">
+            <div class="bubble-content">
+                <div id="skills">
+                    <h3>Mes Compétences</h3>
+                    <div class="skill">
+                        <div class="skill-name">HTML</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 0;" data-skill-level="90%">90%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">CSS</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 0;" data-skill-level="80%">80%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">PHP</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 0;" data-skill-level="60%">60%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 0;" data-skill-level="50%">50%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Python</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 0;" data-skill-level="20%">20%</div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="cv">
+                    <h3>Mon CV</h3>
+                    <p>Vous pouvez télécharger mon CV en cliquant sur le lien ci-dessous :</p>
+                    <div class="cv-thumbnail-container">
+                        <img src="img/cv.png" alt="Aperçu de mon CV" class="cv-thumbnail" id="cvThumbnail">
+                    </div>
+                    <a href="img/ben-mahfoudh-chaima-cv-9.pdf" download="Chaïma_BEN_MAHFOUDH_CV" class="cv-download">Télécharger mon CV</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Modal pour afficher le CV en grand -->
+        <div id="cvModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="cvFullImage">
+        </div>
+        
     </main>
+    
     <footer>
-        <p>Company chaima. All rights reserved.</p>
+        <p>©2024 Portfolio BEN MAHFOUDH Chaïma. All rights reserved.</p>
     </footer>
 </body>
 </html>
-<!-- dans la barre de nav mettre: acceuil, presentation du bts, mon profil dans l'acceuil , mes projet et formation linkedin learning-->

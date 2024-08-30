@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Portfolio Chaïma BEN MAHFOUDH</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><img src="img/logo-ipssi.png" alt="Logo de la bibliothèque"></li>
+                <li class="titre cv"><h3>Mon Portfolio</h3></li>
+                <li class="titre"><a href="index.html">Accueil</a></li>
+                <li class="titre"><a href="bts.html">BTS SIO</a></li>
+                <li class="titre">
+                    <a href="veille.html">Veille Technologique</a>
+                    <ul class="submenu">
+                        <li><a href="veille1.html">Veille 1</a></li>
+                        <li><a href="veille2.html">Veille 2</a></li>
+                    </ul>
+                </li>
+                <li class="titre">
+                    <a href="projet.html">Mes Projets</a>
+                    <ul class="submenu">
+                        <li><a href="projet1.html">Première Année</a></li>
+                        <li><a href="projet2.html">Deuxième Année</a></li>
+                        <li><a href="projet3.html">Projets Personnels</a></li>
+                    </ul>
+                </li>
+                <li class="titre">
+                    <a href="ep.html">Mes Expériences</a>
+                    <ul class="submenu">
+                        <li><a href="stage.html">Stage</a></li>
+                        <li><a href="experience2.html">Alternance</a></li>
+                        <li><a href="experience3.html">Formation Linkedin Learning</a></li>
+                    </ul>
+                </li>
+                <li class="titre"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact">
+            <div id="text-container">
+                <p id="typed-text-contact"></p>
+            </div>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Sujet</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:chaima.benmahfoudh@ecole-ipssi.net">chaima.benmahfoudh@ecole-ipssi.net</a></p>
+                <p>Suivez-moi sur :
+                    <a href="https://www.linkedin.com/in/chaïma-ben-mahfoudh-600a8a264/" target="_blank">LinkedIn</a>,
+                    <a href="https://github.com/ChaimaB776" target="_blank">GitHub</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2024 Portfolio BEN MAHFOUDH Chaïma. All rights reserved.</p>
+    </footer>
+</body>
+</html>
